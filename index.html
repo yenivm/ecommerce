@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="hidden">
+    <header id="header" class="contenedor-principal">
+      <div id="boton-logo">
+        <button id="open-menu">
+          <img src="./images/icon-menu.svg" alt="Boton para desplegar Menú">
+        </button>
+        <div id="logo">
+          <img src="./images/logo.svg" alt="Sneakers">
+        </div>
+      </div>
+      <div id="contenedor-nav">
+        <nav id="navegacion">
+          <button id="boton-cerrar-menu">
+            <img src="./images/icon-close.svg" alt="Boton para cerrar menú">
+          </button>
+          <ul>
+            <li><a href="#"> Collections </a></li>
+            <li><a href="#"> Men </a></li>
+            <li><a href="#"> Women </a></li>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> Contact </a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="usuario-carrito">
+        <button id="carrito"><sup id="sup"></sup><img src="./images/icon-cart.svg" alt="">
+        </button>
+        <button id="usuario-avatar"><img src="./images/image-avatar.png" alt=""></button>
+      </div>
+    </header>
+    <div id="cuerpo" class="contenedor-principal">
+      <section id="section" class="contenedor-principal">
+        <button id="button-previous"><img src="./images/icon-previous.svg" alt="Boton regresar a imagen de galería"></button>
+        <div id="imgs-big-product">
+          <img id="imagen1" src="./images/image-product-1.jpg" alt="Muestra Tennis Sneakers">
+          <img id="imagen2" src="./images/image-product-2.jpg" alt="Muestra Tennis Sneakers">
+          <img id="imagen3" src="./images/image-product-3.jpg" alt="Muestra Tennis Sneakers Perfil">
+          <img id="imagen4" src="./images/image-product-4.jpg" alt="Muestra Tennis Sneakers Perfil">
+        </div>
+        <button id="button-next"><img src="./images/icon-next.svg" alt="Botón para ir a siguiente imagen"></button>
+        <div id="imgs-small-product">
+          <img id="small1" src="./images/image-product-1-thumbnail.jpg" alt="Miniatura Tennis Sneakers">
+          <img id="small2" src="./images/image-product-2-thumbnail.jpg" alt="Miniatura Tennis Sneakers">
+          <img id="small3" src="./images/image-product-3-thumbnail.jpg" alt="Miniatura Tennis Sneakers">
+          <img id="small4" src="./images/image-product-4-thumbnail.jpg" alt="Miniatura Tennis Sneakers">
+        </div>
+      </section>
+      <main id="main" class="contenedor-principal">
+        <h1>Sneaker Company</h1>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p id="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+        <div id="total-cost">
+          <p id="cost">$125.00</p>
+          <p id="discount">50%</p>
+          <p id="inabled">$250.00</p>
+        </div>
+        <div id="formulario">
+          <div id="agregando-productos">
+            <button id="minus"><img src="./images/icon-minus.svg" alt="Restar producto a carrito de compras"></button>
+            <p id="conteo">0</p>
+            <button id="plus"><img src="./images/icon-plus.svg" alt="Agregar producto a carrito de compras"> </button>
+          </div>
+          <button id="cart">Add to cart</button>
+        </div>
+      </main>
+      <div id="box-cart">
+        <h3>Cart</h3>
+        <div id="box-cart--content">
+          <div id="box-card--imagen-miniatura">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="">
+          </div>
+          <div id="box-cart--texto-producto">
+            <p id="parrafo-principal-producto">Your car is empty</p>
+            <p id="costo-productos"> </p>
+          </div>
+          <button id="trash">
+            <img src="./images/icon-delete.svg" alt="Eliminar producto del carrito">
+          </button>
+        </div>
+        <button id="checkout">Checkout</button>
+      </div>
+    </div>
+    
+    <footer class="attribution contenedor-principal">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://curriculum-yvm.netlify.app" target="_blank">Yeni Viveros Montes</a>.
+    </footer>
+  </div>
+
+  <script src="./js/function.js"></script>
+</body>
+</html>
